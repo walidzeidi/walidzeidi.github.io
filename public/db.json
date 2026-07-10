@@ -1,0 +1,129 @@
+{
+  "profile": {
+    "name": "Walid ZEIDI",
+    "roleParts": {
+      "prefix": "Développeur Web ",
+      "highlight": "Full Stack",
+      "middle": "Intégrateur",
+      "suffix": "15+ ans d'expérience"
+    },
+    "pitch": "Je maîtrise le cycle complet de développement, de la première ligne de code jusqu'à la mise en production. Mon moteur au quotidien : relever des défis techniques et concevoir des solutions sur mesure qui apportent une réelle valeur business.",
+    "photo": "/photo-walid.png",
+    "photoTag": "walid.zeidi",
+    "cvFile": "/cv-walid-zeidi.pdf",
+    "topbarLogoPrefix": "walid",
+    "topbarLogoSuffix": "zeidi",
+    "topbarStatus": "disponible — Tunis, TN"
+  },
+  "contact": {
+    "email": "zaidi.walid@gmail.com",
+    "phoneHref": "+21650656149",
+    "phoneDisplay": "+216 50 656 149",
+    "location": "Gouvernorat de Tunis",
+    "linkedinLabel": "walid-zeidi",
+    "linkedinUrl": "https://linkedin.com/in/walid-zeidi"
+  },
+  "experiences": [
+    {
+      "id": "affitech",
+      "method": "PUT",
+      "methodClass": "put",
+      "company": "/affitech",
+      "path": "/full-stack-dev",
+      "duration": "3 ans et 4 mois",
+      "period": "fév 2023 → juin 2026",
+      "location": "Tunisie",
+      "role": "Développeur Web Full Stack & Intégrateur",
+      "tasks": [
+        "<b>Création et intégration d'API externes</b> au sein de la plateforme <b>AffiConnect</b> d'Affinicia France — Powens, Enedis, Energrid, Météore, HomeServe, Santévet et Bulle Bleue — avec intégration graphique des interfaces utilisateur, centralisation et synchronisation sécurisée des données bancaires, énergétiques, d'assurance et de services clients.",
+        "Conception de <b>Helee</b>, moteur de segmentation marketing traitant des millions de profils en temps réel pour des campagnes omnicanales (Email, SMS, Phoning), avec optimisation de bases de données à forte volumétrie.",
+        "Co-conception de <b>Scribb</b>, un système d'évaluation automatisée par <b>Intelligence Artificielle</b>, conçu pour optimiser le contrôle qualité et l'efficacité des processus opérationnels.",
+        "Co-conception d'<b>Affi+</b>, une plateforme de gestion des contrats d'électricité et de gaz, simplifiant leur gestion au quotidien.",
+        "Co-conception d'une <b>plateforme AffiConnect</b> pour Affinicia France dédiée aux centres d'appels, permettant de centraliser la gestion des centres d'appel et des agents ainsi que le suivi et l'amélioration des ventes, et intégrant un <b>script de gestion d'appel</b> entre l'agent et le client pour faciliter la vente."
+      ],
+      "skills": "Laravel, Vue.js, REST API, MySQL, Intégration graphique"
+    },
+    {
+      "id": "az-esthetique",
+      "method": "POST",
+      "methodClass": "post",
+      "company": "/az-esthetique",
+      "path": "/nouvelle-agence",
+      "duration": "1 mois",
+      "period": "déc 2022 → jan 2023",
+      "location": "Freelance",
+      "role": "Responsable de projet",
+      "tasks": [
+        "Conception de l'identité visuelle : <b>logo</b> et charte graphique.",
+        "Développement du site web sous <b>WordPress</b>, avec intégration de maquette graphique et création de plugins dédiés à la chirurgie esthétique.",
+        "Conception d'une <b>plateforme de gestion du parcours patient</b> en chirurgie esthétique : diagnostic médical à distance, devis, envoi des photos, suivi de voyage et suivi post-opératoire."
+      ],
+      "skills": "WordPress, PHP, MySQL, Intégration graphique, Logo design"
+    },
+    {
+      "id": "siroko-travel",
+      "method": "GET",
+      "methodClass": "get",
+      "company": "/siroko-travel",
+      "path": "/infrastructure",
+      "duration": "13 ans et 2 mois",
+      "period": "oct 2009 → déc 2022",
+      "location": "Tunis",
+      "role": "Responsable Informatique",
+      "tasks": [
+        "Conception de <b>trois plateformes interconnectées</b> de gestion du parcours patient en chirurgie esthétique — dédiées respectivement aux <b>patients</b>, aux <b>chirurgiens</b> et aux <b>agents</b> — synchronisées en temps réel pour le suivi du diagnostic médical à distance, des devis, du voyage et du suivi post-opératoire.",
+        "Mise en place d'une <b>infrastructure de base de données centralisée</b>, socle commun aux trois plateformes, garantissant l'intégrité des dossiers médicaux et clients ainsi que la confidentialité des données échangées (photos, diagnostics, devis).",
+        "Conception d'un <b>réseau de 15+ sites web médicaux</b> visant à renforcer la présence SEO du site principal et à augmenter le volume de demandes de devis.",
+        "<b>Refonte technique et graphique</b> des sites web de l'agence, intégrant des maquettes graphiques avec une cohérence de l'interface sur tous les types d'écrans (<b>Responsive Design</b>)."
+      ],
+      "skills": "WordPress, PHP, MySQL, Intégration graphique"
+    }
+  ],
+  "projects": [
+    {
+      "id": "cosmetica-travel",
+      "name": "Cosmetica Travel",
+      "tagline": "Espace Client & Espace Chirurgien — parcours patient en chirurgie esthétique",
+      "badge": "2 espaces · temps réel",
+      "file": "/dossier-cosmetica-travel.pdf"
+    },
+    {
+      "id": "helee",
+      "name": "Helee",
+      "tagline": "Lead & Client Intelligence — segmentation marketing omnicanale",
+      "badge": "+30M leads",
+      "file": "/dossier-helee.pdf"
+    },
+    {
+      "id": "scribb",
+      "name": "Scribb",
+      "tagline": "Quality Assurance & Operational Efficiency AI — audit automatisé par IA",
+      "badge": "100% automatisé",
+      "file": "/dossier-scrib.pdf"
+    }
+  ],
+  "stack": [
+    { "ln": "01", "mod": "PHP·Laravel, Architecture MVC, POO", "from": "backend" },
+    { "ln": "02", "mod": "JavaScript·Vue.js, HTML5, CSS3·Sass/Less", "from": "frontend" },
+    { "ln": "03", "mod": "WordPress·thèmes & plugins sur mesure", "from": "cms" },
+    { "ln": "04", "mod": "API REST, MySQL, RGPD, High Load, Scalabilité", "from": "architecture-data" },
+    { "ln": "05", "mod": "Git·GitHub, Agile·Scrum/Kanban, Jira, Confluence", "from": "methodologies" },
+    { "ln": "06", "comment": "15 ans en production, zéro régression majeure." }
+  ],
+  "integration": [
+    { "tag": "Intégration", "title": "Pixel Perfect", "desc": "Transposition de maquettes graphiques en interfaces dynamiques fidèles au design." },
+    { "tag": "Accessibilité", "title": "Responsive & RGAA/WCAG", "desc": "Design Mobile-First et respect des normes d'accessibilité web." },
+    { "tag": "Performance", "title": "Scalabilité & High Load", "desc": "Optimisation du temps de chargement et architectures capables d'encaisser la charge." },
+    { "tag": "Branding", "title": "Identité visuelle", "desc": "Création de logos et de chartes graphiques cohérentes avec l'univers de marque." }
+  ],
+  "formation": [
+    {
+      "year": "2009",
+      "title": "Licence Appliquée en Art et Multimédia",
+      "school": "ISAMM — Institut Supérieur des Arts Multimédia de la Manouba, Tunis"
+    }
+  ],
+  "footer": {
+    "headline": "Discutons de votre prochain projet."
+  }
+}
