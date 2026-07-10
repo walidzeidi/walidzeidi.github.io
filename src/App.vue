@@ -3,17 +3,7 @@
     <TopBar :profile="data.profile" />
 
     <div class="wrap">
-      <Hero :profile="data.profile" :contact="data.contact" />
-
-      <ExperienceSection :experiences="data.experiences" />
-
-      <ProjectsSection :projects="data.projects" />
-
-      <StackSection :stack="data.stack" />
-
-      <IntegrationSection :cards="data.integration" />
-
-      <FormationSection :formation="data.formation" />
+      <router-view />
     </div>
 
     <SiteFooter :footer="data.footer" :contact="data.contact" />
@@ -23,21 +13,16 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, provide } from 'vue'
 import TopBar from './components/TopBar.vue'
-import Hero from './components/Hero.vue'
-import ExperienceSection from './components/ExperienceSection.vue'
-import ProjectsSection from './components/ProjectsSection.vue'
-import StackSection from './components/StackSection.vue'
-import IntegrationSection from './components/IntegrationSection.vue'
-import FormationSection from './components/FormationSection.vue'
 import SiteFooter from './components/SiteFooter.vue'
 
 const data = ref(null)
 
+provide('cvData', data)
+
 onMounted(async () => {
-  // db.json est servi statiquement depuis /public (ou via `npm run api` avec json-server sur le port 3001)
-  const res = await fetch('/db.json')
+  const res = await fetch(import.meta.env.BASE_URL + 'db.json')
   data.value = await res.json()
 })
 </script>

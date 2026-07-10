@@ -352,6 +352,9 @@ html.light-theme .topbar{ background: rgba(255,255,255,0.85); }
   color: var(--blue); border-color: rgba(88,166,255,0.35); background: rgba(88,166,255,0.08);
 }
 .icon-btn.download:hover{ background: rgba(88,166,255,0.16); }
+.nav-link.router-link-exact-active{
+  border-color: var(--blue); color: var(--blue); background: rgba(88,166,255,0.1);
+}
 
 @media (max-width: 640px){
   .topbar-inner{ flex-wrap: wrap; gap: 10px; row-gap: 8px; }

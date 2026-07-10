@@ -1,7 +1,7 @@
 <template>
   <section class="section" id="competences">
     <div class="section-head">
-      <span class="tag">03</span>
+      <span class="tag">02</span>
       <h2>Stack technique</h2>
     </div>
 

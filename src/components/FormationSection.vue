@@ -1,7 +1,7 @@
 <template>
   <section class="section" id="formation">
     <div class="section-head">
-      <span class="tag">05</span>
+      <span class="tag">04</span>
       <h2>Formation</h2>
     </div>
     <div class="edu" v-for="(f, i) in formation" :key="i">

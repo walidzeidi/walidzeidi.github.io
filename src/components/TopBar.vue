@@ -4,6 +4,8 @@
       <div class="logo">{{ profile.topbarLogoPrefix }}<b>.</b>{{ profile.topbarLogoSuffix }}<span style="color:var(--text-faint)">::cv</span></div>
       <div class="topbar-right">
         <div class="ping"><span class="dot"></span> {{ profile.topbarStatus }}</div>
+        <router-link class="icon-btn nav-link" to="/">CV</router-link>
+        <router-link class="icon-btn nav-link" to="/projets">Projets</router-link>
         <button class="icon-btn" type="button" aria-label="Changer de thème" @click="toggleTheme">
           <span>{{ isLight ? '🌙' : '☀' }}</span><span>{{ isLight ? 'Sombre' : 'Clair' }}</span>
         </button>

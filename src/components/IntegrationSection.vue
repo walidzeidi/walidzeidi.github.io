@@ -1,7 +1,7 @@
 <template>
   <section class="section" id="integration">
     <div class="section-head">
-      <span class="tag">04</span>
+      <span class="tag">03</span>
       <h2>Intégration & UI/UX</h2>
     </div>
     <div class="cards-grid">

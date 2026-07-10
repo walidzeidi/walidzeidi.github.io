@@ -79,10 +79,25 @@
       "skills": "WordPress, PHP, MySQL, Intégration graphique"
     }
   ],
+  "projectCategories": [
+    {
+      "id": 1,
+      "name": "Plateforme"
+    },
+    {
+      "id": 2,
+      "name": "Site web"
+    },
+    {
+      "id": 3,
+      "name": "Logo & identité"
+    }
+  ],
   "projects": [
     {
       "id": "cosmetica-travel",
       "name": "Cosmetica Travel",
+      "category": "Plateforme",
       "tagline": "Espace Client & Espace Chirurgien — parcours patient en chirurgie esthétique",
       "badge": "2 espaces · temps réel",
       "file": "/dossier-cosmetica-travel.pdf"
@@ -90,6 +105,7 @@
     {
       "id": "helee",
       "name": "Helee",
+      "category": "Plateforme",
       "tagline": "Lead & Client Intelligence — segmentation marketing omnicanale",
       "badge": "+30M leads",
       "file": "/dossier-helee.pdf"
@@ -97,24 +113,104 @@
     {
       "id": "scribb",
       "name": "Scribb",
+      "category": "Plateforme",
       "tagline": "Quality Assurance & Operational Efficiency AI — audit automatisé par IA",
       "badge": "100% automatisé",
       "file": "/dossier-scrib.pdf"
+    },
+    {
+      "id": "affi-plus",
+      "name": "Affi+",
+      "category": "Plateforme",
+      "tagline": "Plateforme de gestion des contrats d'électricité et de gaz, simplifiant leur suivi au quotidien",
+      "badge": "Gestion de contrats",
+      "file": null
+    },
+    {
+      "id": "afficonnect",
+      "name": "AffiConnect — Centres d'appels",
+      "category": "Plateforme",
+      "tagline": "Backoffice de centralisation de la gestion des centres d'appel, des agents et du suivi des ventes",
+      "badge": "Scripts & backoffice",
+      "file": null
+    },
+    {
+      "id": "az-esthetique-site",
+      "name": "AZ Esthétique — Site web",
+      "category": "Site web",
+      "tagline": "Site vitrine WordPress avec plugins sur mesure dédiés à la chirurgie esthétique",
+      "badge": "WordPress · plugins",
+      "file": null
+    },
+    {
+      "id": "siroko-reseau-sites",
+      "name": "Réseau de sites médicaux",
+      "category": "Site web",
+      "tagline": "Réseau de 15+ sites web médicaux, refonte technique et graphique, Responsive Design",
+      "badge": "15+ sites",
+      "file": null
+    },
+    {
+      "id": "az-esthetique-identite",
+      "name": "AZ Esthétique — Identité visuelle",
+      "category": "Logo & identité",
+      "tagline": "Création du logo et de la charte graphique d'une nouvelle agence de chirurgie esthétique",
+      "badge": "Logo & charte",
+      "file": null
     }
   ],
   "stack": [
-    { "ln": "01", "mod": "PHP·Laravel, Architecture MVC, POO", "from": "backend" },
-    { "ln": "02", "mod": "JavaScript·Vue.js, HTML5, CSS3·Sass/Less", "from": "frontend" },
-    { "ln": "03", "mod": "WordPress·thèmes & plugins sur mesure", "from": "cms" },
-    { "ln": "04", "mod": "API REST, MySQL, RGPD, High Load, Scalabilité", "from": "architecture-data" },
-    { "ln": "05", "mod": "Git·GitHub, Agile·Scrum/Kanban, Jira, Confluence", "from": "methodologies" },
-    { "ln": "06", "comment": "15 ans en production, zéro régression majeure." }
+    {
+      "ln": "01",
+      "mod": "PHP·Laravel, Architecture MVC, POO",
+      "from": "backend"
+    },
+    {
+      "ln": "02",
+      "mod": "JavaScript·Vue.js, HTML5, CSS3·Sass/Less",
+      "from": "frontend"
+    },
+    {
+      "ln": "03",
+      "mod": "WordPress·thèmes & plugins sur mesure",
+      "from": "cms"
+    },
+    {
+      "ln": "04",
+      "mod": "API REST, MySQL, RGPD, High Load, Scalabilité",
+      "from": "architecture-data"
+    },
+    {
+      "ln": "05",
+      "mod": "Git·GitHub, Agile·Scrum/Kanban, Jira, Confluence",
+      "from": "methodologies"
+    },
+    {
+      "ln": "06",
+      "comment": "15 ans en production, zéro régression majeure."
+    }
   ],
   "integration": [
-    { "tag": "Intégration", "title": "Pixel Perfect", "desc": "Transposition de maquettes graphiques en interfaces dynamiques fidèles au design." },
-    { "tag": "Accessibilité", "title": "Responsive & RGAA/WCAG", "desc": "Design Mobile-First et respect des normes d'accessibilité web." },
-    { "tag": "Performance", "title": "Scalabilité & High Load", "desc": "Optimisation du temps de chargement et architectures capables d'encaisser la charge." },
-    { "tag": "Branding", "title": "Identité visuelle", "desc": "Création de logos et de chartes graphiques cohérentes avec l'univers de marque." }
+    {
+      "tag": "Intégration",
+      "title": "Pixel Perfect",
+      "desc": "Transposition de maquettes graphiques en interfaces dynamiques fidèles au design."
+    },
+    {
+      "tag": "Accessibilité",
+      "title": "Responsive & RGAA/WCAG",
+      "desc": "Design Mobile-First et respect des normes d'accessibilité web."
+    },
+    {
+      "tag": "Performance",
+      "title": "Scalabilité & High Load",
+      "desc": "Optimisation du temps de chargement et architectures capables d'encaisser la charge."
+    },
+    {
+      "tag": "Branding",
+      "title": "Identité visuelle",
+      "desc": "Création de logos et de chartes graphiques cohérentes avec l'univers de marque."
+    }
   ],
   "formation": [
     {
