@@ -13,6 +13,8 @@
     <IntegrationSection :cards="data.integration" />
 
     <FormationSection :formation="data.formation" />
+
+    <ContactForm :contact-email="data.contact.email" />
   </template>
 </template>
 
@@ -23,6 +25,7 @@ import ExperienceSection from '../components/ExperienceSection.vue'
 import StackSection from '../components/StackSection.vue'
 import IntegrationSection from '../components/IntegrationSection.vue'
 import FormationSection from '../components/FormationSection.vue'
+import ContactForm from '../components/ContactForm.vue'
 
 const data = inject('cvData')
 </script>

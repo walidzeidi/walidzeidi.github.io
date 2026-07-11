@@ -95,68 +95,180 @@
   ],
   "projects": [
     {
-      "id": "cosmetica-travel",
+      "id": "plateforme",
       "name": "Cosmetica Travel",
       "category": "Plateforme",
       "tagline": "Espace Client & Espace Chirurgien — parcours patient en chirurgie esthétique",
-      "badge": "2 espaces · temps réel",
-      "file": "/dossier-cosmetica-travel.pdf"
+      "badge": "PHP · MYSQL",
+      "file": "/screenshots/dossier-cosmetica-travel.pdf",
+      "url": null,
+      "screenshot": "/screenshots/dossier-cosmetica-travel.pdf"
     },
     {
-      "id": "helee",
+      "id": "plateforme",
       "name": "Helee",
       "category": "Plateforme",
       "tagline": "Lead & Client Intelligence — segmentation marketing omnicanale",
-      "badge": "+30M leads",
-      "file": "/dossier-helee.pdf"
+      "badge": "Laravel · Vue.js · MySQL",
+      "file": "/screenshots/dossier-helee.pdf",
+      "url": null,
+      "screenshot": null
     },
     {
-      "id": "scribb",
+      "id": "plateforme",
       "name": "Scribb",
       "category": "Plateforme",
       "tagline": "Quality Assurance & Operational Efficiency AI — audit automatisé par IA",
-      "badge": "100% automatisé",
-      "file": "/dossier-scrib.pdf"
+      "badge": "Laravel · Vue.js · MySQL",
+      "file": "/screenshots/dossier-scrib.pdf",
+      "url": null,
+      "screenshot": null
     },
     {
-      "id": "affi-plus",
+      "id": "plateforme",
       "name": "Affi+",
       "category": "Plateforme",
       "tagline": "Plateforme de gestion des contrats d'électricité et de gaz, simplifiant leur suivi au quotidien",
-      "badge": "Gestion de contrats",
-      "file": null
+      "badge": "Laravel · Vue.js · MySQL",
+      "file": null,
+      "url": null,
+      "screenshot": null
     },
+
+    
+
+
+
+
     {
-      "id": "afficonnect",
-      "name": "AffiConnect — Centres d'appels",
+      "id": "plateforme",
+      "name": "AffiConnect",
       "category": "Plateforme",
-      "tagline": "Backoffice de centralisation de la gestion des centres d'appel, des agents et du suivi des ventes",
-      "badge": "Scripts & backoffice",
-      "file": null
+      "tagline": "Script & Backoffice de la gestion des centres d'appel, des agents et du suivi des ventes",
+      "badge": "Laravel · Vue.js · MySQL",
+      "file": "/screenshots/afficonnect.pdf",
+      "url": null,
+      "screenshot": null
     },
     {
-      "id": "az-esthetique-site",
-      "name": "AZ Esthétique — Site web",
+      "id": "websites",
+      "name": "Cosmetica Travel",
       "category": "Site web",
-      "tagline": "Site vitrine WordPress avec plugins sur mesure dédiés à la chirurgie esthétique",
+      "tagline": "Site dédié à la chirurgie esthétique, accessible depuis l'étranger (hors Tunisie)",
+      "badge": "PHP · MYSQL",
+      "file": null,
+      "url": "https://www.cosmeticatravel.com/",
+      "screenshot": "/screenshots/www.cosmeticatravel.com_.png"
+    },
+    {
+      "id": "websites",
+      "name": "Chirurgia estetica pro",
+      "category": "Site web",
+      "tagline": "Site WordPress dédiés à la chirurgie esthétique",
       "badge": "WordPress · plugins",
-      "file": null
+      "file": null,
+      "url": "https://chirurgiaesteticapro.com/",
+      "screenshot": "/screenshots/www.chirurgiaesteticapro.com_.png"
     },
     {
-      "id": "siroko-reseau-sites",
-      "name": "Réseau de sites médicaux",
+      "id": "websites",
+      "name": "AZ Esthétique",
       "category": "Site web",
-      "tagline": "Réseau de 15+ sites web médicaux, refonte technique et graphique, Responsive Design",
-      "badge": "15+ sites",
-      "file": null
+      "tagline": "Site WordPress dédiés à la chirurgie esthétique",
+      "badge": "WordPress · plugins",
+      "file": null,
+      "url": "https://azesthetique.com/",
+      "screenshot": "/screenshots/www.azesthetique.com_.png"
     },
     {
-      "id": "az-esthetique-identite",
-      "name": "AZ Esthétique — Identité visuelle",
-      "category": "Logo & identité",
-      "tagline": "Création du logo et de la charte graphique d'une nouvelle agence de chirurgie esthétique",
-      "badge": "Logo & charte",
-      "file": null
+      "id": "websites",
+      "name": "Abdominoplastie",
+      "category": "Site web",
+      "tagline": "Site dédié à la chirurgie esthétique, accessible depuis l'étranger (hors Tunisie)",
+      "badge": "PHP · MYSQL",
+      "file": null,
+      "url": "https://www.abdominoplastie.org/",
+      "screenshot": "/screenshots/www.abdominoplastie.org_.png"
+    },
+    {
+      "id": "websites",
+      "name": "Implant capillaire",
+      "category": "Site web",
+      "tagline": "Site dédié à la chirurgie esthétique, accessible depuis l'étranger (hors Tunisie)",
+      "badge": "PHP · MYSQL",
+      "file": null,
+      "url": "https://www.implant-capillaire.org/",
+      "screenshot": "/screenshots/www.implant-capillaire.org_.png"
+    },
+    {
+      "id": "websites",
+      "name": "Blépharoplastie",
+      "category": "Site web",
+      "tagline": "Site dédié à la chirurgie esthétique, accessible depuis l'étranger (hors Tunisie)",
+      "badge": "PHP · MYSQL",
+      "file": null,
+      "url": "https://www.blepharoplastie.net/",
+      "screenshot": "/screenshots/www.blepharoplastie.net_.png"
+    },
+    {
+      "id": "websites",
+      "name": "Implant mammaire",
+      "category": "Site web",
+      "tagline": "Site dédié à la chirurgie esthétique, accessible depuis l'étranger (hors Tunisie)",
+      "badge": "PHP · MYSQL",
+      "file": null,
+      "url": "https://www.implant-mammaire.net/",
+      "screenshot": "/screenshots/www.implant-mammaire.net_.png"
+    },
+    {
+      "id": "websites",
+      "name": "Lifting Mammaire",
+      "category": "Site web",
+      "tagline": "Site dédié à la chirurgie esthétique, accessible depuis l'étranger (hors Tunisie)",
+      "badge": "PHP · MYSQL",
+      "file": null,
+      "url": "https://www.lifting-mammaire.net/",
+      "screenshot": "/screenshots/www.lifting-mammaire.net_.png"
+    },
+    {
+      "id": "websites",
+      "name": "La liposuccion",
+      "category": "Site web",
+      "tagline": "Site dédié à la chirurgie esthétique, accessible depuis l'étranger (hors Tunisie)",
+      "badge": "PHP · MYSQL",
+      "file": null,
+      "url": "https://www.la-liposuccion.com/",
+      "screenshot": "/screenshots/www.la-liposuccion.com_.png"
+    },
+    {
+      "id": "websites",
+      "name": "Réduction Mammaire",
+      "category": "Site web",
+      "tagline": "Site dédié à la chirurgie esthétique, accessible depuis l'étranger (hors Tunisie)",
+      "badge": "PHP · MYSQL",
+      "file": null,
+      "url": "https://www.reduction-mammaire.org/",
+      "screenshot": "/screenshots/www.reduction-mammaire.org_.png"
+    },
+    {
+      "id": "websites",
+      "name": "Otoplastie",
+      "category": "Site web",
+      "tagline": "Site dédié à la chirurgie esthétique, accessible depuis l'étranger (hors Tunisie)",
+      "badge": "PHP · MYSQL",
+      "file": null,
+      "url": "https://www.otoplastie.info/",
+      "screenshot": "/screenshots/www.otoplastie.info_.png"
+    },
+    {
+      "id": "websites",
+      "name": "Gynécomastie",
+      "category": "Site web",
+      "tagline": "Site dédié à la chirurgie esthétique, accessible depuis l'étranger (hors Tunisie)",
+      "badge": "PHP · MYSQL",
+      "file": null,
+      "url": "https://www.gynecomastie.org/",
+      "screenshot": "/screenshots/www.gynecomastie.org_.png"
     }
   ],
   "stack": [

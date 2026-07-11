@@ -15,37 +15,39 @@
     </div>
 
     <div class="proj-grid">
-      <template v-for="proj in filteredProjects" :key="proj.id">
-        <a v-if="proj.file" class="proj-tile" :href="proj.file" target="_blank">
-          <div class="tile-top">
-            <span class="tile-method">GET</span>
-            <span class="tile-cat">{{ proj.category }}</span>
-          </div>
-          <h3>{{ proj.name }}</h3>
-          <div class="tile-tagline">{{ proj.tagline }}</div>
-          <div class="tile-badge"><span>{{ proj.badge }}</span><span class="fmt">PDF ↗</span></div>
-        </a>
-        <div v-else class="proj-tile is-static">
-          <div class="tile-top">
-            <span class="tile-method get-muted">GET</span>
-            <span class="tile-cat">{{ proj.category }}</span>
-          </div>
-          <h3>{{ proj.name }}</h3>
-          <div class="tile-tagline">{{ proj.tagline }}</div>
-          <div class="tile-badge"><span>{{ proj.badge }}</span><span class="fmt">—</span></div>
+      <button
+        v-for="proj in filteredProjects"
+        :key="proj.id"
+        class="proj-tile"
+        type="button"
+        @click="selected = proj"
+      >
+        <div class="tile-top">
+          <span class="tile-method">GET</span>
+          <span class="tile-cat">{{ proj.category }}</span>
         </div>
-      </template>
+        <h3>{{ proj.name }}</h3>
+        <div class="tile-tagline">{{ proj.tagline }}</div>
+        <div class="tile-badge">
+          <span>{{ proj.badge }}</span>
+          <span class="fmt">Aperçu ↗</span>
+        </div>
+      </button>
     </div>
 
     <p v-if="filteredProjects.length === 0" class="empty-state">Aucun projet dans cette catégorie.</p>
+
+    <ProjectModal :project="selected" @close="selected = null" />
   </section>
 </template>
 
 <script setup>
-import { inject, ref, computed } from 'vue'
+import { inject, ref, computed, onMounted, onUnmounted } from 'vue'
+import ProjectModal from '../components/ProjectModal.vue'
 
 const data = inject('cvData')
 const activeCategory = ref('Tous')
+const selected = ref(null)
 
 const filteredProjects = computed(() => {
   if (!data.value) return []
@@ -53,104 +55,53 @@ const filteredProjects = computed(() => {
   return data.value.projects.filter(p => p.category === activeCategory.value)
 })
 
-function countByCategory(cat) {
+function countByCategory(cat){
   if (!data.value) return 0
   return data.value.projects.filter(p => p.category === cat).length
 }
+
+function onKeydown(e){
+  if (e.key === 'Escape') selected.value = null
+}
+onMounted(() => window.addEventListener('keydown', onKeydown))
+onUnmounted(() => window.removeEventListener('keydown', onKeydown))
 </script>
 
 <style scoped>
-.projects-page {
-  border-top: none;
-  padding-top: 32px;
+.projects-page{ border-top: none; padding-top: 32px; }
+.section-head{ position: relative; }
+.back-link{
+  font-family:'JetBrains Mono', monospace; font-size: 12.5px; color: var(--text-dim);
+  border: 1px solid var(--border); padding: 6px 12px; border-radius: 6px; margin-right: 4px;
+}
+.back-link:hover{ border-color: var(--blue); color: var(--text); text-decoration:none; }
+
+.filter-row{ display:flex; flex-wrap:wrap; gap: 8px; margin-bottom: 24px; }
+.filter-chip{
+  font-family:'JetBrains Mono', monospace; font-size: 12.5px;
+  border: 1px solid var(--border); background: var(--surface); color: var(--text-dim);
+  padding: 7px 14px; border-radius: 20px; cursor:pointer; transition: all .15s ease;
+}
+.filter-chip:hover{ border-color: var(--blue); color: var(--text); }
+.filter-chip.active{
+  border-color: var(--blue); background: rgba(88,166,255,0.14); color: var(--blue); font-weight: 600;
 }
 
-.section-head {
-  position: relative;
+.proj-tile{
+  font-family: inherit; text-align: left; cursor: pointer;
+  width: 100%;
+}
+.tile-cat{
+  font-family:'JetBrains Mono', monospace; font-size: 10.5px; color: var(--text-faint);
+  border: 1px solid var(--border); padding: 2px 8px; border-radius: 4px;
 }
 
-.back-link {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 12.5px;
-  color: var(--text-dim);
-  border: 1px solid var(--border);
-  padding: 6px 12px;
-  border-radius: 6px;
-  margin-right: 4px;
+.empty-state{
+  color: var(--text-faint); font-family:'JetBrains Mono', monospace; font-size: 13px;
+  padding: 24px 0; text-align:center;
 }
 
-.back-link:hover {
-  border-color: var(--blue);
-  color: var(--text);
-  text-decoration: none;
-}
-
-.filter-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 24px;
-}
-
-.filter-chip {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 12.5px;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  color: var(--text-dim);
-  padding: 7px 14px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all .15s ease;
-}
-
-.filter-chip:hover {
-  border-color: var(--blue);
-  color: var(--text);
-}
-
-.filter-chip.active {
-  border-color: var(--blue);
-  background: rgba(88, 166, 255, 0.14);
-  color: var(--blue);
-  font-weight: 600;
-}
-
-.tile-cat {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10.5px;
-  color: var(--text-faint);
-  border: 1px solid var(--border);
-  padding: 2px 8px;
-  border-radius: 4px;
-}
-
-.get-muted {
-  background: rgba(139, 148, 158, 0.14) !important;
-  color: var(--text-faint) !important;
-}
-
-.proj-tile.is-static {
-  cursor: default;
-}
-
-.proj-tile.is-static:hover {
-  border-color: var(--border);
-  transform: none;
-  background: var(--surface);
-}
-
-.empty-state {
-  color: var(--text-faint);
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 13px;
-  padding: 24px 0;
-  text-align: center;
-}
-
-@media (max-width: 640px) {
-  .proj-grid {
-    grid-template-columns: 1fr;
-  }
+@media (max-width: 640px){
+  .proj-grid{ grid-template-columns: 1fr; }
 }
 </style>
