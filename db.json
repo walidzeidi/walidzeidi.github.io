@@ -19,8 +19,8 @@
     "email": "zaidi.walid@gmail.com",
     "phoneHref": "+21650656149",
     "phoneDisplay": "+216 50 65 61 49",
-    "location": "Tunis, Tunisie (Nationalité tunisienne / Autorisé à travailler en Tunisie)",
-    "mobility": "Ouvert au Remote (Télétravail) & Opportunités à l'international / Relocalisation",
+    "location": "Tunis, Tunisie (Nationalité tunisienne)",
+    "mobility": "Ouvert au Remote (Télétravail) & Opportunités à l'international",
     "linkedinLabel": "walid-zeidi",
     "linkedinUrl": "https://linkedin.com/in/walid-zeidi"
   },
@@ -365,11 +365,11 @@
   ],
   "languages": [
     {
-      "language": "Français",
+      "name": "Français",
       "level": "Avancé"
     },
     {
-      "language": "Anglais",
+      "name": "Anglais",
       "level": "Professionnel / Technique (Lu, écrit, échanges techniques)"
     }
   ],
