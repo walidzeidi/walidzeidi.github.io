@@ -19,7 +19,7 @@
     <div class="proj-grid">
       <button
         v-for="proj in filteredProjects"
-        :key="proj.id"
+        :key="`${proj.category}-${proj.name}`"
         class="proj-tile"
         type="button"
         @click="selected = proj"
