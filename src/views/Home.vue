@@ -14,6 +14,8 @@
 
     <FormationSection :formation="data.formation" />
 
+    <LanguagesSection :language="data.languages" />
+
     <ContactForm :contact-email="data.contact.email" />
   </template>
 </template>
@@ -26,6 +28,7 @@ import StackSection from '../components/StackSection.vue'
 import IntegrationSection from '../components/IntegrationSection.vue'
 import FormationSection from '../components/FormationSection.vue'
 import ContactForm from '../components/ContactForm.vue'
+import LanguagesSection from '../components/LanguagesSection.vue'
 
 const data = inject('cvData')
 </script>

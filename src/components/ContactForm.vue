@@ -1,7 +1,7 @@
 <template>
   <section class="section" id="contact">
     <div class="section-head">
-      <span class="tag">05</span>
+      <span class="tag">06</span>
       <h2>Me contacter</h2>
     </div>
 

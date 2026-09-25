@@ -7,11 +7,13 @@
     </div>
 
     <div class="filter-row">
-      <button class="filter-chip" :class="{ active: activeCategory === 'Tous' }" @click="activeCategory = 'Tous'">Tous
-        ({{ data.projects.length }})</button>
+      <button class="filter-chip" :class="{ active: activeCategory === 'Tous' }" @click="activeCategory = 'Tous'">
+        Tous ({{ data.projects.length }})
+      </button>
       <button v-for="cat in data.projectCategories" :key="cat.id" class="filter-chip"
-        :class="{ active: activeCategory === cat.name }" @click="activeCategory = cat.name">{{ cat.name }} ({{
-          countByCategory(cat.name) }})</button>
+        :class="{ active: activeCategory === cat.name }" @click="activeCategory = cat.name">
+        {{ cat.name }} ({{ countByCategory(cat.name) }})
+      </button>
     </div>
 
     <div class="proj-grid">
@@ -22,6 +24,10 @@
         type="button"
         @click="selected = proj"
       >
+        <div v-if="hasPngImage(proj)" class="tile-preview">
+          <img :src="getProjectImage(proj)" :alt="proj.name" loading="lazy" />
+        </div>
+
         <div class="tile-top">
           <span class="tile-method">GET</span>
           <span class="tile-cat">{{ proj.category }}</span>
@@ -60,6 +66,15 @@ function countByCategory(cat){
   return data.value.projects.filter(p => p.category === cat).length
 }
 
+function hasPngImage(proj) {
+  const img = proj.image || proj.img || proj.thumbnail || proj.preview || proj.screenshot
+  return img && typeof img === 'string' && img.toLowerCase().includes('.png')
+}
+
+function getProjectImage(proj) {
+  return proj.image || proj.img || proj.thumbnail || proj.preview || proj.screenshot
+}
+
 function onKeydown(e){
   if (e.key === 'Escape') selected.value = null
 }
@@ -90,7 +105,33 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
 .proj-tile{
   font-family: inherit; text-align: left; cursor: pointer;
   width: 100%;
+  overflow: hidden; /* Permet aux coins arrondis de rogner l'image si besoin */
 }
+
+/* AJOUT : Style de la miniature */
+.tile-preview {
+  width: 100%;
+  height: 140px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+}
+
+.tile-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.proj-tile:hover .tile-preview img {
+  transform: scale(1.05);
+}
+
 .tile-cat{
   font-family:'JetBrains Mono', monospace; font-size: 10.5px; color: var(--text-faint);
   border: 1px solid var(--border); padding: 2px 8px; border-radius: 4px;

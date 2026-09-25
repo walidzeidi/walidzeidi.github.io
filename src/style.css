@@ -293,6 +293,17 @@ a:hover{ text-decoration: underline; }
 .edu h3{ font-size: 15.5px; font-weight: 600; margin-bottom: 4px; }
 .edu p{ color: var(--text-dim); font-size: 13.5px; }
 
+/* ---------- Langues ---------- */
+.lng{
+  display:flex; gap: 18px; align-items:flex-start;
+  background: var(--surface); border:1px solid var(--border); border-radius: 10px; padding: 20px 22px; flex-direction: column;
+}
+.lng .field{
+    display: flex; align-items: center;
+}
+.lng h3{ font-size: 15.5px; font-weight: 600; margin-bottom: 4px; width: 80px; }
+.lng p{ color: var(--text-dim); font-size: 13.5px; }
+
 /* ---------- FOOTER ---------- */
 footer{
   border-top: 1px solid var(--border);

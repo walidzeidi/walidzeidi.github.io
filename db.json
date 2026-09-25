@@ -126,73 +126,13 @@
   "projects": [
     {
       "id": "plateforme",
-      "name": "Cosmetica Travel",
+      "name": "Cosmetica Travel - Espace Client",
       "category": "Plateforme",
-      "tagline": "Espace Client & Espace Chirurgien — parcours patient en chirurgie esthétique",
+      "tagline": "Espace Client — parcours patient en chirurgie esthétique",
       "badge": "PHP · MYSQL",
-      "file": "/screenshots/dossier-cosmetica-travel.pdf",
+      "file": "/screenshots/dossier-cosmeticatravel-client.pdf",
       "url": null,
-      "screenshot": "/screenshots/dossier-cosmetica-travel.pdf"
-    },
-    {
-      "id": "plateforme",
-      "name": "Helee",
-      "category": "Plateforme",
-      "tagline": "Lead & Client Intelligence — segmentation marketing omnicanale",
-      "badge": "MySQL High Load · REST API",
-      "file": "/screenshots/dossier-helee.pdf",
-      "url": null,
-      "screenshot": null
-    },
-    {
-      "id": "plateforme",
-      "name": "Scribb",
-      "category": "Plateforme",
-      "tagline": "Quality Assurance & Operational Efficiency AI — audit automatisé par IA",
-      "badge": "IA · Automation · PHP",
-      "file": "/screenshots/dossier-scrib.pdf",
-      "url": null,
-      "screenshot": null
-    },
-    {
-      "id": "plateforme",
-      "name": "Affi+",
-      "category": "Plateforme",
-      "tagline": "Plateforme de gestion des contrats d'électricité et de gaz, simplifiant leur suivi au quotidien",
-      "badge": "PHP · REST API · MySQL",
-      "file": null,
-      "url": null,
-      "screenshot": null
-    },
-    {
-      "id": "plateforme",
-      "name": "AffiConnect",
-      "category": "Plateforme",
-      "tagline": "Script & Backoffice de la gestion des centres d'appel, des agents et du suivi des ventes",
-      "badge": "REST API · Multi-services · Data Sync",
-      "file": "/screenshots/afficonnect.pdf",
-      "url": null,
-      "screenshot": null
-    },
-    {
-      "id": "websites",
-      "name": "Cosmetica Travel",
-      "category": "Site web",
-      "tagline": "Site dédié à la chirurgie esthétique, accessible depuis l'étranger (hors Tunisie)",
-      "badge": "PHP · MYSQL",
-      "file": null,
-      "url": "https://www.cosmeticatravel.com/",
-      "screenshot": "/screenshots/www.cosmeticatravel.com_.png"
-    },
-    {
-      "id": "websites",
-      "name": "Chirurgia estetica pro",
-      "category": "Site web",
-      "tagline": "Site WordPress dédié à la chirurgie esthétique",
-      "badge": "WordPress · Thèmes & Plugins sur mesure",
-      "file": null,
-      "url": "https://chirurgiaesteticapro.com/",
-      "screenshot": "/screenshots/www.chirurgiaesteticapro.com_.png"
+      "screenshot": "/screenshots/logo-cosmeticatravel.png"
     },
     {
       "id": "websites",
@@ -213,6 +153,86 @@
       "file": null,
       "url": "https://www.abdominoplastie.org/",
       "screenshot": "/screenshots/www.abdominoplastie.org_.png"
+    },
+    {
+      "id": "plateforme",
+      "name": "Helee",
+      "category": "Plateforme",
+      "tagline": "Lead & Client Intelligence — segmentation marketing omnicanale",
+      "badge": "MySQL High Load · REST API",
+      "file": "/screenshots/dossier-helee.pdf",
+      "url": null,
+      "screenshot": "/screenshots/logo-helee.png"
+    },
+    {
+      "id": "websites",
+      "name": "Otoplastie",
+      "category": "Site web",
+      "tagline": "Site dédié à la chirurgie esthétique, accessible depuis l'étranger (hors Tunisie)",
+      "badge": "PHP · MYSQL",
+      "file": null,
+      "url": "https://www.otoplastie.info/",
+      "screenshot": "/screenshots/www.otoplastie.info_.png"
+    },
+    {
+      "id": "plateforme",
+      "name": "Scribb",
+      "category": "Plateforme",
+      "tagline": "Quality Assurance & Operational Efficiency AI — audit automatisé par IA",
+      "badge": "IA · Automation · PHP",
+      "file": "/screenshots/dossier-scribb.pdf",
+      "url": null,
+      "screenshot": "/screenshots/logo-scribb.png"
+    },
+    {
+      "id": "logo",
+      "name": "AZ Esthétique",
+      "category": "Logo & identité",
+      "tagline": null,
+      "badge": null,
+      "file": null,
+      "url": null,
+      "screenshot": "/screenshots/logo-azesthetique.png"
+    },
+    {
+      "id": "plateforme",
+      "name": "Affi+",
+      "category": "Plateforme",
+      "tagline": "Plateforme de gestion des contrats d'électricité et de gaz, simplifiant leur suivi au quotidien",
+      "badge": "PHP · REST API · MySQL",
+      "file": "/screenshots/dossier-affiplus.pdf",
+      "url": null,
+      "screenshot": "/screenshots/affiplus.png"
+    },
+    {
+      "id": "plateforme",
+      "name": "AffiConnect",
+      "category": "Plateforme",
+      "tagline": "Script & Backoffice de la gestion des centres d'appel, des agents et du suivi des ventes",
+      "badge": "REST API · Multi-services · Data Sync",
+      "file": "/screenshots/afficonnect.pdf",
+      "url": null,
+      "screenshot": "/screenshots/logo-affinicia.png"
+    },
+    {
+      "id": "websites",
+      "name": "Cosmetica Travel",
+      "category": "Site web",
+      "tagline": "Site dédié à la chirurgie esthétique, accessible depuis l'étranger (hors Tunisie)",
+      "badge": "PHP · MYSQL",
+      "file": null,
+      "url": "https://www.cosmeticatravel.com/",
+      "screenshot": "/screenshots/www.cosmeticatravel.com_.png"
+    },
+    {
+      "id": "websites",
+      "name": "Chirurgia estetica pro",
+      "category": "Site web",
+      "tagline": "Site WordPress dédié à la chirurgie esthétique",
+      "badge": "WordPress · Thèmes & Plugins sur mesure",
+      "file": null,
+      "url": "https://chirurgiaesteticapro.com/",
+      "screenshot": "/screenshots/www.chirurgiaesteticapro.com_.png"
     },
     {
       "id": "websites",
@@ -265,6 +285,16 @@
       "screenshot": "/screenshots/www.la-liposuccion.com_.png"
     },
     {
+      "id": "plateforme",
+      "name": "Cosmetica Travel - Espace Chirurgien",
+      "category": "Plateforme",
+      "tagline": "Espace Chirurgien — parcours patient en chirurgie esthétique",
+      "badge": "PHP · MYSQL",
+      "file": "/screenshots/dossier-cosmeticatravel-chirurgien.pdf",
+      "url": null,
+      "screenshot": "/screenshots/logo-cosmeticatravel.png"
+    },
+    {
       "id": "websites",
       "name": "Réduction Mammaire",
       "category": "Site web",
@@ -273,16 +303,6 @@
       "file": null,
       "url": "https://www.reduction-mammaire.org/",
       "screenshot": "/screenshots/www.reduction-mammaire.org_.png"
-    },
-    {
-      "id": "websites",
-      "name": "Otoplastie",
-      "category": "Site web",
-      "tagline": "Site dédié à la chirurgie esthétique, accessible depuis l'étranger (hors Tunisie)",
-      "badge": "PHP · MYSQL",
-      "file": null,
-      "url": "https://www.otoplastie.info/",
-      "screenshot": "/screenshots/www.otoplastie.info_.png"
     },
     {
       "id": "websites",
